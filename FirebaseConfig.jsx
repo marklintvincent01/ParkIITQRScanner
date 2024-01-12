@@ -1,17 +1,16 @@
 import { initializeApp } from "firebase/app";
-import { initializeAuth, getAuth, getReactNativePersistence } from "firebase/auth";
+import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore"
-import AsyncStorage from '@react-native-async-storage/async-storage'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAtsKBwASydm6x8-kQVM0DuTFed7U8NOd0",
-    authDomain: "parkiit.firebaseapp.com",
-    projectId: "parkiit",
-    storageBucket: "parkiit.appspot.com",
-    databaseURL: "https://parkiit-default-rtdb.asia-southeast1.firebasedatabase.app/",
-    messagingSenderId: "337466403051",
-    appId: "1:337466403051:web:c8d961e6ae6e8c8e0a76ae",
-    measurementId: "G-FM5W79GYB2"
+    apiKey: "your.apiKey",
+    authDomain: "your.authDomain",
+    projectId: "your.projectId",
+    storageBucket: "your.storageBucket",
+    databaseURL: "your.databaseURL",
+    messagingSenderId: "your.messagingSenderId",
+    appId: "your.appId",
+    measurementId: "your.measurementId"
 };
 
 export const FIREBASE_APP = initializeApp(firebaseConfig);
